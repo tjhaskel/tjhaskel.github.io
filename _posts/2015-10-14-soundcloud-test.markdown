@@ -8,7 +8,7 @@ Here I'm testing out soundcloud embedding
 
 It's pretty cool
 
-<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/154993029&color=4B306A&"> </iframe>
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/155044978&color=4B306A&"> </iframe>
 
 If that doesn't work, here's [the link itself][playlist]
 
