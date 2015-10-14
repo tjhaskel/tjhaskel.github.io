@@ -1,0 +1,42 @@
+body { font-family: 'Open+Sans', sans-serif; margin: 0; padding: 0; }
+#mapTarget {background-repeat: no-repeat;}
+#map-wrapper { position: relative; background-position: 0 0; background-repeat: no-repeat !important; font-family: sans-serif, Tahoma, Arial; overflow: hidden; }
+#map-wrapper #the-pieces { position: absolute; left: 0; top: 0; overflow: hidden; }
+.custom-file, .station, .station-label, #map-title { position: absolute; }
+.station { position: absolute; z-index: 99; }
+.station-label { width: 128px; text-align: center; z-index: 100; }
+.r0 { }
+.r45 { -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.r90 { -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); }
+.r135 { -ms-transform: rotate(135deg); -webkit-transform: rotate(135deg); transform: rotate(135deg); }
+.r180 { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.r225 { -ms-transform: rotate(225deg); -webkit-transform: rotate(225deg); transform: rotate(225deg); }
+.r270 { -ms-transform: rotate(270deg); -webkit-transform: rotate(270deg); transform: rotate(270deg); }
+.r315 { -ms-transform: rotate(315deg); -webkit-transform: rotate(315deg); transform: rotate(315deg); }
+.station { cursor: pointer; }
+.os-image { z-index: 99; }
+.r0.flip { -moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); filter: FlipH; -ms-filter: "FlipH"; }
+.r45.flip { -ms-transform: rotate(45deg) scaleX(-1); -webkit-transform: rotate(45deg) scaleX(-1); transform: rotate(45deg) scaleX(-1); }
+.r90.flip { -ms-transform: rotate(90deg) scaleX(-1); -webkit-transform: rotate(90deg) scaleX(-1); transform: rotate(90deg) scaleX(-1); }
+.r135.flip { -ms-transform: rotate(135deg) scaleX(-1); -webkit-transform: rotate(135deg) scaleX(-1); transform: rotate(135deg) scaleX(-1); }
+.r180.flip { -ms-transform: rotate(180deg) scaleX(-1); -webkit-transform: rotate(180deg) scaleX(-1); transform: rotate(180deg) scaleX(-1); }
+.r225.flip { -ms-transform: rotate(225deg) scaleX(-1); -webkit-transform: rotate(225deg) scaleX(-1); transform: rotate(225deg) scaleX(-1); }
+.r270.flip { -ms-transform: rotate(270deg) scaleX(-1); -webkit-transform: rotate(270deg) scaleX(-1); transform: rotate(270deg) scaleX(-1); }
+.r315.flip { -ms-transform: rotate(315deg) scaleX(-1); -webkit-transform: rotate(315deg) scaleX(-1); transform: rotate(315deg) scaleX(-1); }
+
+/*Layout*/
+#content-col { float: left; width: 100%; margin-top: 0px; }
+#content-wrap { margin: 0; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; }
+#map-viewer { margin: 0px; margin-top: 0; }
+
+.station-label.unplaced { left: auto !important; width: 50px !important; font-size: 10px !important; position: relative !important; }
+.custom-file { display: inline-block; margin: 10px; position: relative; z-index: 100; text-align: center; }
+#the-pieces .custom-file, #the-pieces .custom-file { position: absolute !important; z-index: 1001; }
+#the-pieces .station, #the-pieces .station-label { z-index: 1002; }
+#the-pieces .os-image {z-index:1003;}
+.fileName { position: absolute; bottom: -14px; font-size: 10px; font-weight: normal; }
+
+/*firefox*/
+/*@-moz-document url-prefix() {
+    .labstats-logo { background-size: 135px auto; }
+}*/
