@@ -18,6 +18,7 @@ keywords:    "music, jekyll, videos, github, blog, single page"
 description: "A place for me to share"
 favicon:     "img/favicon.ico"
 touch_icon:  "img/touch-icon.png"
+google_analytics_key: UA-68888314-1
 
 ### template colors, used site-wide via css ###
 colors:
