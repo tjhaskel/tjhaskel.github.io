@@ -86,8 +86,9 @@ hr {
 .icontain {
   position: relative;
   height: 0;
+	width: 90%;
   overflow: hidden;
-	padding: 0 5% 70% 5%;
+	padding-bottom: 90%;
 }
 .i4x3 { padding-bottom: 75.00%; } /* keep 4x3 Aspect Ratio */
 .icontain iframe {
