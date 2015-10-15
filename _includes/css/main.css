@@ -82,8 +82,8 @@ hr {
     margin-top: 40px;
 }
 
-/* keep embedded videos fluid! */
-.icontain {
+/* keep embedded music fluid! */
+.icontain-music {
   position: relative;
   height: 0;
 	width: 92%;
@@ -91,8 +91,18 @@ hr {
   overflow: hidden;
 	padding-bottom: 90%;
 }
+
+.icontain-video {
+  position: relative;
+  height: 0;
+	width: 56.25%;
+  margin: 0 auto;
+  overflow: hidden;
+	padding-bottom: 90%;
+}
+
 .i4x3 { padding-bottom: 75.00%; } /* keep 4x3 Aspect Ratio */
-.icontain iframe {
+.icontain-music iframe , .icontain-video iframe {
   position: absolute;
   top:0;
   left: 0;
