@@ -86,7 +86,8 @@ hr {
 .icontain {
   position: relative;
   height: 0;
-	left:5%;
+	width: 90%;
+  margin: 0 auto;
   overflow: hidden;
 	padding-bottom: 90%;
 }
