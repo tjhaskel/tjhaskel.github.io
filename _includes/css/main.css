@@ -95,14 +95,14 @@ hr {
 .icontain-video {
   position: relative;
   height: 0;
-	width: 56.25%;
+	width: 92%;
   margin: 0 auto;
   overflow: hidden;
-	padding-bottom: 90%;
+	padding-bottom: 56.25%; /* keep 16x9 Aspect Ratio */
 }
 
 .i4x3 { padding-bottom: 75.00%; } /* keep 4x3 Aspect Ratio */
-.icontain-music iframe , .icontain-video iframe {
+.icontain-music iframe, .icontain-video iframe {
   position: absolute;
   top:0;
   left: 0;
