@@ -1,0 +1,135 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+}
+
+body { 
+	font: 62.5%/1.5  "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif; 
+	color: #000000;	 
+	text-align:center;
+}
+
+/* Set the size and font of the tab widget */
+.tabGroup {
+	width: 100vw;
+	height: 93.75vh;
+}
+ 
+/* Configure the radio buttons to hide off screen */
+.tabGroup > input[type="radio"] {
+	position: absolute;
+	left:-100px;
+}
+ 
+/* Configure maximum width of tabs and align to top */
+.tabGroup > div.tablabels {
+	display: inline-block;
+	vertical-align: top;
+	width:10%;
+	float:right;
+	height: 100%;
+	margin-right: 2px;
+}
+ 
+/* Configure labels to look like tabs */
+.tabGroup > div.tablabels > label {
+	/* inline-block such that the label can be given dimensions */
+	display: inline-block;
+	width:100%;
+	height: 33%;
+ 
+	/* Set the background color to default gray (non-selected tab) */
+	background-color:#ddd;
+	
+	z-index: 1;
+}
+ 
+/* Checked tabs must be white with the bottom border removed */
+.tabGroup > input#rad1:checked + input#rad2 + input#rad3 + div.tablabels > label[for="rad1"],
+.tabGroup > input#rad2:checked + input#rad3 + div.tablabels > label[for="rad2"],
+.tabGroup > input#rad3:checked + div.tablabels > label[for="rad3"] {
+	background-color:white;
+	font-weight: bold;
+	position:relative;
+}
+ 
+.tabGroup > div.tabcontent {
+	display: inline-block;
+	height: 99.8%;
+	width: 89.75%;
+	float:left;
+}
+ 
+/* The tab content must fill the widgets size and have a nice border */
+.tabGroup > div.tabcontent > div {
+	width:100%;
+	display: none;
+	background-color: white;
+	height: 100%;
+	overflow: auto;
+}
+ 
+/* This matchs tabs displaying to thier associated radio inputs */
+.tabGroup > .seat:checked + .bus + .weather + div.tablabels + div.tabcontent > .seat,
+.tabGroup > .bus:checked + .weather + div.tablabels + div.tabcontent > .bus,
+.tabGroup > .weather:checked + div.tablabels + div.tabcontent > .weather {
+	display: inline-block;
+}
+
+iframe {
+	height: 99%;
+	width: 100%;
+}
+
+label > img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+}
+
+@font-face { font-family: 'BentonSansRegular'; src: url("https://fonts.iu.edu/fonts/benton-sans-regular.eot"); src: url("https://fonts.iu.edu/fonts/benton-sans-regular.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/benton-sans-regular.woff") format("woff"), url("https://fonts.iu.edu/fonts/benton-sans-regular.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/benton-sans-regular.svg#BentonSansRegular") format("svg"); font-style: normal; font-weight: normal; }
+
+@font-face { font-family: 'BentonSansCondRegular'; src: url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.eot"); src: url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.woff") format("woff"), url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.svg#BentonSansCondRegular") format("svg"); font-style: normal; font-weight: normal; }
+
+@font-face { font-family: 'BentonSansCondBold'; src: url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.eot"); src: url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.woff") format("woff"), url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.svg#BentonSansCondBold") format("svg"); font-style: normal; font-weight: normal; }
+
+@font-face { font-family: 'GeorgiaProItalic'; src: url("https://fonts.iu.edu/fonts/georgia-pro-italic.eot"); src: url("https://fonts.iu.edu/fonts/georgia-pro-italic.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/georgia-pro-italic.woff") format("woff"), url("https://fonts.iu.edu/fonts/georgia-pro-italic.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/georgia-pro-italic.svg#GeorgiaProItalic") format("svg"); font-style: normal; font-weight: normal; }
+
+/* Branding Bar */
+/* Add a utitlity clearfix */
+.brand-clearfix:before, .brand-clearfix:after { content: ''; display: table; }
+.brand-clearfix:after { clear: both; }
+
+#branding-bar-v1 { background: #7A1705; color: #fff; min-height: 46px; font-size: 16px; text-align: right; position: relative; z-index: 5; -webkit-font-smoothing: initial; -moz-font-smoothing: initial; font-smoothing: initial; }
+#branding-bar-v1 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* Campus names */
+#branding-bar-v1 .wrapper { max-width: 63.75em; margin-left: auto; margin-right: auto; padding-right: 2.35765%; padding-left: 2.35765%; }
+#branding-bar-v1 .wrapper:after { content: ""; display: table; clear: both; }
+#branding-bar-v1 a { color: #fff; }
+#branding-bar-v1 ul { list-style: none; }
+#branding-bar-v1 p { margin-top: 0; }
+
+/* Bar */
+#branding-bar-v1 .bar { border-top: 6px solid #990000; }
+
+/* Trident Tab & Campus Name */
+#branding-bar-v1 .campus { font-family: "BentonSansCondRegular", "Arial Narrow", Arial, Helvetica, sans-serif; font-size: 1em; /* 16px (16/16) */ font-weight: normal; left: auto; letter-spacing: 0.025em; line-height: 1em; /* 16px (16/16) */ position: absolute; text-align: left; text-transform: uppercase; top: 6px; z-index: 400; margin: 0; }
+#branding-bar-v1 .campus a { font-family: inherit; display: table-cell; height: 40px; padding: 0 0 0 50px; text-decoration: none; vertical-align: middle; }
+#branding-bar-v1 .campus a:hover { text-decoration: none; color: #fff; }
+#branding-bar-v1 .campus img { height: auto; left: 0; position: absolute; top: -7px; width: 40px; }
+#branding-bar-v1 .campus .expanded { display: none; }
+
+/* 768px (768/16) */
+@media screen and (min-width: 48em) { #branding-bar-v1 { min-height: 52px; }
+  /*** Trident Tab & Campus Name ***/
+  #branding-bar-v1 .campus { font-size: 1.125em; /* 18px (18/16) */ line-height: 1em; /* 18px (18/18) */ }
+  #branding-bar-v1 .campus a { height: 46px; padding: 0 0 0 75px; }
+  #branding-bar-v1 .campus img { left: 0; width: 64px; } }
+
+/* 980px (980/16) - 960+20 for FF, IE, Opera d/t rounding */
+@media screen and (min-width: 63.75em) { /* Campus names */
+  #branding-bar-v1 .wrapper { padding: 0; }
+  #branding-bar-v1 .campus abbr { display: none; }
+  #branding-bar-v1 .campus .expanded { display: block; } }
