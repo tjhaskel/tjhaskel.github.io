@@ -98,7 +98,7 @@ hr {
 	width: 92%;
   margin: 0 auto;
   overflow: hidden;
-	padding-bottom: 56.25%; /* keep 16x9 Aspect Ratio */
+	padding-bottom: 60%; /* keep 16x9 Aspect Ratio */
 }
 
 .i4x3 { padding-bottom: 75.00%; } /* keep 4x3 Aspect Ratio */
