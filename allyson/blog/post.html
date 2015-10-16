@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <title>Chez Allyson Blog</title>
+	
+	<img src="../images/Logo.png" />
+	<link rel="shortcut icon" href="../images/atfavicon.png" />
+	<link href="../css/styles2.css" type="text/css"
+			rel="stylesheet" />
+
+    <script type="text/javascript" src="ajax.js"> </script>
+    <script type="text/javascript" src="date.js"> </script>
+
+<script type="text/javascript">
+		// Global Ajax request
+		var ajaxReq = new AjaxRequest();
+		var today = (new Date()).shortFormat();
+		
+		function updateClock () {
+			var currentTime = new Date ();
+			var currentHours = currentTime.getHours ();
+			var currentMinutes = currentTime.getMinutes ();
+			var currentSeconds = currentTime.getSeconds ();
+			// Pad the minutes and seconds with leading zeros, if required
+			currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+			currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+
+			// Choose either "AM" or "PM" as appropriate
+			var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+
+			// Convert the hours component to 12-hour format if needed
+			currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+
+			// Convert an hours component of "0" to "12"
+			currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+
+			// Compose the string for display
+			var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+
+			// Update the time display
+			document.getElementById("time").innerHTML = currentTimeString;
+		}
+
+		// Add a new blog entry to an XML doc on the server using Ajax
+		function addBlogEntry() {
+			// Disable the Add button and set the status to busy
+			document.getElementById("add").disabled = true;
+			document.getElementById("status").innerHTML = "Adding...";
+
+			// Send the new blog entry data as an Ajax request
+			ajaxReq.send("POST", "addblogentry.php", handleRequest, "application/x-www-form-urlencoded; charset=UTF-8",
+			"subject=" + document.getElementById("subject").value 
+			+ "&date=" + today 
+			+ "&time=" + document.getElementById("time").innerHTML 
+			+ "&body=" + document.getElementById("body").value 
+			+ "&image=" + document.getElementById("image").value);
+		}
+	  
+		// Handle the Ajax request
+		function handleRequest() {
+			if (ajaxReq.getReadyState() == 4 && ajaxReq.getStatus() == 200) {
+			// Enable the Add button and clear the status
+			document.getElementById("add").disabled = false;
+			document.getElementById("status").innerHTML = "";
+
+			// Confirm the addition of the blog entry
+			document.getElementById("status").innerHTML = "The new blog entry was successfully added.";
+			}
+		}
+
+		// Initialize the blog entry form
+		function initForm() {
+			document.getElementById("subject").focus();
+			document.getElementById("date").innerHTML = today;
+			document.getElementById("body");
+		}
+    </script>
+  </head>
+
+  <body onload="initForm(); updateClock(); setInterval('updateClock()', 1000 )">
+  <header>
+		
+	
+			<nav>
+				<ul>
+					<li><a href="..">Home</a></li>
+                    <li><a href="../aboutme/index.html">About Me</a></li>
+                    <li><a href="../blog/index.html">My Blog</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+				</ul>
+			</nav>
+			<br>
+		<h2>Blog</h2>
+	</header>
+    <br>
+	<div id="content">
+	<article>
+	Title:<br />
+	<input type="text" id="subject" name="subject" value="" size="30" /><br /> 
+    Date and Time:<br /> 
+	<span id="date"></span> --
+	<span id="time"></span><br />
+    Body:<br /> 
+	<textarea id="body" name="body" value="" cols="100" rows="10"></textarea><br />
+    Image:<br /> 
+	<input type="text" id="image" name="image" value="" size="20" /><br />
+    <a href="#" id="add" onclick="addBlogEntry();">Add blog entry</a><p>
+				<div id="status"></div>
+    <a href="../blog">Back to blog posts</a>
+	<br>
+    <a href="..">Back to homepage</a>
+	</article>
+	</div>
+  </body>
+</html>

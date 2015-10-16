@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blog>
+  <title>Chez Allyson Blog</title>
+  <author>Allyson</author>
+  <entries>
+  <entry><subject>Updates to Website</subject><date>9/25/2013</date><body>As you may have noticed, those of you that have been with me from the beginning 
+  (mainly Trevan haha), I have made a few updates to my website! First off my navigation bar is a complete improvement! It used to just look like little links, 
+  but now it looks like real buttons! I also created a sidebar where I can eventually put up an archive of my blogs. I learned how to put up a background image. 
+  See the adorable picture of my dog, Haylie? Well Trevan actually took that with a film camera. He's pretty decent at taking pictures. The shots would have been
+  even more amazing if the lens on the camera was better. One of my goals is to learn photography, use photoshop and then hopefully share my work on here. As for
+  the website, I'd like to integrate in a comment box and a real archive area for the blog. I also intend to learn some other coding languages to improve it 
+  overall. However I'm not exactly sure what else I can do with this website but I'd definitely keep working at it. I've already learned so much!</body></entry>
+  <entry><subject>First Blog Post</subject><date>9/20/2013</date><body>Hey guys! I'm just testing out how to use HTML5 from the book I'm using to learn HTML
+  and CSS. Hopefully this will work out okay :). I'm just learning everything as I go. The book I'm using is &lt;i&gt;HTML&amp;CSS Design and Build Websites&lt;/i&gt;
+  by Jon Duckett.</body></entry>
+  <entry><subject>It's Friday!</subject><date>10/4/2013</date><time>5:15:29 PM</time><body>      Yay! It's finally Friday!! :) I'm so excited! I made a few 
+  updates to this blog. Actually, I made a ton of updates, but you can't really tell just by looking at it. The code for it is drastically different though. 
+  This is actually starting to feel like a real blog. See before, I used to just write the blog posts in the HTML. Now I'm doing it on a webpage that I created.
+  I type in these little form boxes and then it sends it and transfers it to XML and saves it in an XML file and then it transforms back into HTML and gets 
+  posted on my Blog page. Pretty cool huh? However I didn't just create this on my own (haha I wish). Trevan is actually taking a class that "taught" him how 
+  to create a blog. Taught is in quotes because he wasn't actually &lt;i&gt;taught&lt;/i&gt; anything,  he was just told to copy some code down. So we've adapted
+  that code and learned a lot from it to make our separate blogs. As you may have noticed they are quite similar. Another new thing is that our blogs have a date
+  and time that is created with javascript! Woot woot! Well, I hope you guys like it. It's a lot of hard work but it's very rewarding and fun. Hopefully my next 
+  post will be more exciting than this, I am just worn out from the week.</body></entry>
+  <entry><subject>Going Paleo</subject><date>10/15/2013</date><time>4:34:28 PM</time><body>Hey guys! Sorry I did not get a blog post up last week, I had tests
+  and too much homework! Everything important always happens at once in college. Also I guess it’s midterms too. Anyway, I don’t think I’ve really made any 
+  updates to my website since the last blog post. I would really like to make a functional comment box but I need to learn more about the other programming 
+  languages before that’s even possible. For now this works well enough.
+&lt;br&gt;
+&lt;br&gt;
+In other news, Trevan and I have decided to try Paleo! You might be wondering what the heck Paleo is. Well in simple terms, Paleo is a diet based on the idea 
+that humans are actually designed to use fat as a fuel source and not carbs. This is leftover from the Paleolithic era before the agriculture revolution. 
+Humans during this time were hunters and gatherers.  Therefore, the diet is all about eating lots of vegetables with some meat and some fruit and then cutting 
+out processed foods.  This website does a really good job of explaining the logic behind the diet and what foods are recommended to eat: 
+&lt;a href="http://thepaleodiet.com/" target="_blank"&gt;The Paleo Diet&lt;/a&gt;. The website is based off of the research done by the leading Paleo expert, 
+Dr. Loren Cordain. 
+&lt;br&gt;
+&lt;br&gt;
+It might sound crazy to cut out pasta, bread, sugar, beans, and lots of yummy things but hopefully it’ll be for the better. People who have switched to the 
+Paleo diet have said that they experience feeling less tired, less hungry with no/fewer urges to snack throughout the day, and feel overall healthier and 
+happier. It’s exciting to try something new and I look forward to experimenting with Trevan with all these new recipes that I’ve found on this great blog 
+&lt;a href="http://nomnompaleo.com/" target="_blank"&gt;Nom Nom Paleo&lt;/a&gt; along with recipes on the other blogs that she links to.  Nom Nom Paleo has been a great resource
+ for understanding and getting excited about Paleo! Now, Trevan and I just need to finish off all of our bad food so we can get started! We’re too poor as 
+ college students to just get rid of it. We’ll definitely keep you updated about how this is working out for us as we go along.
+&lt;br&gt;
+&lt;br&gt;
+Wish us luck!
+</body></entry>
+</entries>
+  </blog>

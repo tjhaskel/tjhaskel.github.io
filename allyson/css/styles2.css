@@ -1,0 +1,125 @@
+* {
+    font-family: arial;
+    color: black;
+    text-align: center;}
+body {
+    width: 960px;
+    margin: 0 auto;
+    font-family: arial;
+	background-color: rgb(185,179,175);
+	background: url(/Ally/images/07_19.jpg) no-repeat bottom center fixed;
+	background-size: cover;}
+nav {
+	width: 960px;
+	padding: 0px}
+ul {
+	margin: 0px 0px;
+	padding: 0px;
+	list-style-type: none;}
+nav li {
+	display: inline;
+	width: 25%;
+	margin: 10px 0px}
+nav li a {
+	display: inline-block;
+	background-color: #899cc7;
+	color: Black;
+	padding: 10px;
+	width: 220px;
+	float: left;
+	margin: 0px;
+	text-decoration: none;}
+nav li a:hover {
+	background-color: #3d2d39;
+	color: white;}
+h1 {
+	font-family: monotype corsiva;
+    color: white;
+	margin: 0px 0px 21px 0px;
+	background-color: DarkCyan;}
+hr {
+	border-color: darkcyan;
+	background-color: darkcyan;
+	color: darkcyan;}
+h2 {
+    width: 960px;       
+	margin: 0 auto;
+	color: white;
+    background-color: #b2d6ca;}
+p {
+	width: 650px;
+    text-align: left;
+    text-indent: 40px;
+    padding: 20px;
+	background-color: white;
+	margin: 0px;}
+img.align-left {
+    float: left;
+    margin-right: 10px;}
+#content,#blog {
+	border: 3px;
+	border-style: solid;
+	border-color: darkcyan;
+	width: 710px;
+	float: left;
+	background-color: white;
+	text-align: left;}
+h3{
+	padding: 0px 20px 0px 20px;
+    text-align: left;}
+h3.archive {
+	padding: 0px;
+	text-align: center;}
+h4 {
+	padding: 0px 20px 0px 20px;
+    text-align: left;}
+fieldset {
+	width:350px;
+	margin: 0px auto;
+	border: 1px solid #dcdcdc;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: left;}
+legend {
+	background-color: #efefef;
+	border: 1px solid #dcdcdc;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: left;
+	text-transform: uppercase;}
+input#name {
+	text-align: left;}
+input#submit {
+	float: right;}
+p.comments {
+	text-indent: 0px;
+	text-align: left;
+	width: 670px;}
+aside {
+	border: 3px;
+	border-style: solid;
+	border-color: darkcyan;
+	width: 218px;
+    float: right;
+    padding: 0px 5px 0px 5px;
+	margin: 0px 0px 0px 10px;
+	background-color: white;}
+#blog {
+	width: 710px;
+	margin: 0px;
+	text-align: left;}
+article {
+	text-align: left;
+	padding: 10px;}
+input#subject, #body, #date, #image {
+	width: 170px;
+	text-align: left;}
+input#subject {
+	color: #3d2d39}
+input#search, #showall, #viewrandom {
+	background-color: #3d2d39;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 10px 10px 10px;}
+input#search:hover, #showall:hover, #viewrandom:hover {
+	background-color: darkcyan;}

@@ -1,0 +1,7 @@
+[26-Sep-2013 23:02:31 America/New_York] PHP Fatal error:  Function name must be a string in /home/trevgafq/public_html/Ally/blog/comments.php on line 2
+[26-Sep-2013 23:02:49 America/New_York] PHP Fatal error:  Function name must be a string in /home/trevgafq/public_html/Ally/blog/comments.php on line 2
+[26-Sep-2013 23:02:56 America/New_York] PHP Fatal error:  Function name must be a string in /home/trevgafq/public_html/Ally/blog/comments.php on line 2
+[26-Sep-2013 23:03:41 America/New_York] PHP Fatal error:  Function name must be a string in /home/trevgafq/public_html/Ally/blog/comments.php on line 2
+[27-Sep-2013 09:48:05 America/New_York] PHP Parse error:  syntax error, unexpected '<' in /home/trevgafq/public_html/Ally/blog/comments.php on line 21
+[27-Sep-2013 09:48:32 America/New_York] PHP Parse error:  syntax error, unexpected '<' in /home/trevgafq/public_html/Ally/blog/comments.php on line 21
+[27-Sep-2013 09:48:51 America/New_York] PHP Parse error:  syntax error, unexpected '>' in /home/trevgafq/public_html/Ally/blog/comments.php on line 21
