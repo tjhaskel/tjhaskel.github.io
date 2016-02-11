@@ -11,6 +11,7 @@ timezone: null
 lsi: false
 markdown: kramdown
 highlighter: rouge
+future: true
 
 ### content configuration ###
 title:       "trevanhaskell.com"
