@@ -8,7 +8,7 @@ body {
 	margin: 0 auto;
 	font-family: arial;
 	background-color: rgb(185,179,175);
-	background: url(/allyson/images/07_19.jpg) no-repeat bottom center fixed;
+	/*background: url(/allyson/images/07_19.jpg) no-repeat bottom center fixed;*/
 	background-size: cover;}
 nav {
 	display: block;
