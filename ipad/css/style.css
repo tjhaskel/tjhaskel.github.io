@@ -2,31 +2,119 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
+	color: #FFFFFF;
 }
 
 body {
 	font-family: "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
 	background: url(../images/wallpaper.png) no-repeat;
 	background-size: cover;
-	color: #FFFFFF;
+	text-align:center;
 	margin:0 auto;
 	width: 95vw;
 }
 
-a {	color: #FFFFFF; }
+img {
+	width: 80%;
+	height: 30%;
+}
 
-.demo {
- 	opacity: 0.95;
+label > img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.title {
+	padding: 60px;
+	font-size: 2em;
+}
+
+.demo_background {
+	background: rgba(0, 0, 0, 0.6);
+	margin-top: 40px;
+	height: 96vh;
+}
+
+.kiosk {
+	opacity: .95;
 	border: 3px solid black;
 }
 
+.demo iframe {
+	width: 1280px;
+	height: 720px;
+}
+
+.tabcontent iframe {
+	height: 99%;
+	width: 100%;
+}
+
 .demo_info {
-	font-size: 1.5em;
-	width: 60%;
+	padding: 40px;
+	font-size: 3em;
+	text-align: left;
+}
+
+.button {
+    background-color: #447590;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 120px 60px;
+    cursor: pointer;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 40px;
+	margin: 20px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 3%;
+}
+
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+	height: 48.5%;
+}
+
+.span_1_of_2 {
+	width: 48.5%;
+	height: 48.5%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
 }
 
 /* Set the size and font of the tab widget */
-.tabGroup { height: 53vh; }
+.tabGroup { height: 49.6vh; }
 
 /* Configure the radio buttons to hide off screen */
 .tabGroup > input[type="radio"] {
@@ -48,8 +136,6 @@ a {	color: #FFFFFF; }
 .tabGroup > div.tablabels > label {
 	/* inline-block such that the label can be given dimensions */
 	display: inline-block;
-	width:100%;
-	height: 33%;
 
 	/* Set the background color to default gray (non-selected tab) */
 	background-color:#ddd;
@@ -81,33 +167,20 @@ a {	color: #FFFFFF; }
 	overflow: auto;
 }
 
-/* This matchs tabs displaying to thier associated radio inputs */
+/* This matchs tabs displaying to their associated radio inputs */
 .tabGroup > .seat:checked + .bus + .weather + div.tablabels + div.tabcontent > .seat,
 .tabGroup > .bus:checked + .weather + div.tablabels + div.tabcontent > .bus,
 .tabGroup > .weather:checked + div.tablabels + div.tabcontent > .weather {
 	display: inline-block;
 }
 
-iframe {
-	height: 99%;
-	width: 100%;
-}
-
-label > img {
-	display: inline-block;
-	vertical-align: middle;
-	width: 100%;
-}
+/* all below is IU Branding */
 
 @font-face { font-family: 'BentonSansRegular'; src: url("https://fonts.iu.edu/fonts/benton-sans-regular.eot"); src: url("https://fonts.iu.edu/fonts/benton-sans-regular.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/benton-sans-regular.woff") format("woff"), url("https://fonts.iu.edu/fonts/benton-sans-regular.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/benton-sans-regular.svg#BentonSansRegular") format("svg"); font-style: normal; font-weight: normal; }
-
 @font-face { font-family: 'BentonSansCondRegular'; src: url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.eot"); src: url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.woff") format("woff"), url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.svg#BentonSansCondRegular") format("svg"); font-style: normal; font-weight: normal; }
-
 @font-face { font-family: 'BentonSansCondBold'; src: url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.eot"); src: url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.woff") format("woff"), url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.svg#BentonSansCondBold") format("svg"); font-style: normal; font-weight: normal; }
-
 @font-face { font-family: 'GeorgiaProItalic'; src: url("https://fonts.iu.edu/fonts/georgia-pro-italic.eot"); src: url("https://fonts.iu.edu/fonts/georgia-pro-italic.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/georgia-pro-italic.woff") format("woff"), url("https://fonts.iu.edu/fonts/georgia-pro-italic.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/georgia-pro-italic.svg#GeorgiaProItalic") format("svg"); font-style: normal; font-weight: normal; }
 
-/* Branding Bar */
 /* Add a utitlity clearfix */
 .brand-clearfix:before, .brand-clearfix:after { content: ''; display: table; }
 .brand-clearfix:after { clear: both; }
