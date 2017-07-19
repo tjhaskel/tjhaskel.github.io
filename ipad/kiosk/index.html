@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>IUB Interactive iPad Sign</title>
+	<meta name="description" content="Seat-tracker, Bus map, and weather">
+	<meta name="author" content="Trevan Haskell, STC Development">
+
+	<link rel="stylesheet" href="../css/kiosk.css?v=1.0">
+</head>
+<body>
+	<br><br><br><br><br>
+	<div class="demo">
+		<div id="branding-bar-v1" itemscope="itemscope" itemtype="http://schema.org/CollegeOrUniversity">
+			<div class="bar">
+				<div class="wrapper">
+					<h1 class="campus">
+						<a href="#" title="Informatics & Communications Technology Center 131">
+							<img src="../images/trident-large.png" height="73" width="64" alt=" " />
+							Informatics & Communications Technology Center 131
+						</a>
+					</h1>
+				</div>
+			</div>
+		</div>
+		<div class="tabGroup">
+			<input type="radio" name="tabGroup1" id="rad1" class="seat" checked="checked"/>
+			<input type="radio" name="tabGroup1" id="rad2" class="bus"/>
+			<input type="radio" name="tabGroup1" id="rad3" class="weather"/>
+
+			<div class="tablabels">
+				<label onclick="" for="rad1"><img src="../images/seatFinder.png" alt="Seat Finder"/></label>
+				<label onclick="" for="rad2"><img src="../images/doubleMap.png" alt="Bus Tracker"/></label>
+				<label onclick="" for="rad3"><img src="../images/weather.png" alt="Weather"/></label>
+			</div>
+
+			<div class="tabcontent">
+				<div class="seat"><iframe src="IT131_map.html"></iframe></div>
+				<div class="bus"><iframe src="http://iub.doublemap.com/map/kiosk"></iframe></div>
+				<div class="weather"><iframe src="https://weather.com/weather/today/l/39.16,-86.55?temp=f&par=google"></iframe></div>
+			</div>
+		</div>
+	</div>
+	<div class="demo_info">
+		<br>
+		<h1>Lab Kiosk Demo</h1>
+		<br>
+		<p>The Lab Kiosk would serve as intelligent digital signage designed to provide quick, relevant information to students. This demo includes an automatically updating seatfinder, a real-time map of IUB campus buses, and a weather forecast for Bloomington. </p>
+		<br>
+		◀<a href="..">Back</a>
+	</div>
+</body>
+</html>
